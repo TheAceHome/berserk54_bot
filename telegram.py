@@ -12,7 +12,7 @@ import graphics
 import strategy_final
 import subs
 
-API_TOKEN = '1829411136:AAG6ZOpMCO6t9A8vwp7AVkDfAbhreXU0VAc'
+API_TOKEN = 'token'
 
 bot = Bot(token=API_TOKEN)
 # For example use simple MemoryStorage for Dispatcher.
