@@ -265,7 +265,7 @@ async def process_name(message: types.Message, state: FSMContext):
         async with state.proxy() as data:
             data['stop'] = message.text
         strategy_final.try_strategy(data['ticker'], data['start'], data['stop'])
-        await bot.send_photo(message.from_user.id, open('graphs/result.png', 'rb'))
+        await bot.send_document(message.from_user.id, open('result.csv', 'rb'))
         await bot.send_message(message.from_user.id,
                                text='🔔Ежедневно в 8:30 вы можете получать уведомления об изменении состояния цены акции и предложение о покупке или продажи акции(а также о режиме ожидания)\n✔️Для подписки выполните команду /subscribe')
         await bot.send_message(message.from_user.id,
