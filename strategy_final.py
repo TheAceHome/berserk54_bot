@@ -155,7 +155,7 @@ def try_strategy(ticker, start_date, end_date):
             random_state=0,
             return_heatmap=True)
         result[i] = stats
-    dfi.export(result, 'graphs/result.png')
+    result.to_csv('result.csv', sep=';', index=False)
 
 
 def comp_strategy():
