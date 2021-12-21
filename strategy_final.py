@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import yfinance
 from backtesting import Backtest, Strategy
-import dataframe_image as dfi
 from datetime import datetime
 
 
